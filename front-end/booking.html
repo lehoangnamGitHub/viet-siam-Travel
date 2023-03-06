@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" Content-Type="text/html">
+  <meta content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Viet Siam travel - Booking Tour </title>
+  <!--Bootstrap @5.2.3 cdnjs-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Bootstrap.end-->
+  <!--Bootstrap Datepicker plugin @1.9.0 cdnjs-->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Datepicker.end-->
+  <!--Awesome font @6.2.1 cdnjs-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Awesome font @6.2.1 cdnjs-->
+  <!--Swiper @9.0.5 cdnjs-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.css"
+    integrity="sha512-CTWIgc35lLPcCl1OP7MNcrrES+jyBBvMEz8Cqx/v0hifPNjIpPsd/jUYTJ/41CYCrQdfuw7LopKaqqjXVLqejg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Swiper.end-->
+  <!--Custom css @1.0.0 assets-->
+  <link rel="stylesheet" href="./assets/.css/parallax.css">
+  <link rel="stylesheet" href="./assets/.css/text.css">
+  <link rel="stylesheet" href="./assets/.css/section.css">
+  <link rel="stylesheet" href="./assets/.css/flex-box.css">
+  <link rel="stylesheet" href="./assets/.css/dropdown.css">
+  <link rel="stylesheet" href="./assets/.css/styles.css">
+  <link rel="stylesheet" href="./assets/.css/button.css">
+  <link rel="stylesheet" href="./assets/.css/navbar.css">
+  <link rel="stylesheet" href="./assets/.css/swiper.css">
+  <link rel="stylesheet" href="./assets/.css/card.css">
+  <link rel="stylesheet" href="./assets/.css/aspect-ratio.css">
+  <link rel="stylesheet" href="./assets/.css/video.css">
+  <!--Custom.end-->
+</head>
+
+<body>
+  <!--#addressHeader-->
+  <header class="address-header" id="addressHeader">
+    <!--addressHeader-->
+    <ul class="d-flex nav">
+      <!--#contactUs-->
+      <li class="d-flex nav-item" id="contactUs">
+        <!--contact-us-->
+        <div class="d-flex nav-link" data-css="addressHeader" type="contact us">
+          <span class="text-capitalize text-nowrap"> Contact us: </span>
+        </div>
+        <!--contact-us.end-->
+        <!--email-->
+        <div class="d-flex nav-link" data-css="addressHeader" type="envelope">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEmail"
+            aria-expanded="false" aria-controls="collapseEmail" aria-label="envelope">
+            <i class="fa-solid fa-envelope"></i>
+          </button>
+          <div class="collapse collapse-horizontal" id="collapseEmail">
+            <a href="">
+              <span> vanvanle1983@gmail.com </span>
+            </a>
+          </div>
+        </div>
+        <!--email.end-->
+        <!--phone-->
+        <div class="d-flex nav-link" data-css="addressHeader" type="phone">
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhone"
+            aria-expanded="false" aria-controls="collapsePhone" aria-label="phone">
+            <i class="fa-solid fa-phone"></i>
+          </button>
+          <div class="collapse collapse-horizontal" id="collapsePhone">
+            <a href="">
+              <span> +84.838.674.298 </span>
+            </a>
+          </div>
+        </div>
+        <!--phone.end-->
+      </li>
+      <!--#contactUs.end-->
+      <!--#languageSelect-->
+      <li class="nav-item d-flex" id="languageSelect">
+        <div class="dropdown" data-positon="relative" data-css="languageSelect">
+          <!--languageSelect-->
+          <button class="btn text-light" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="language"
+            type="button">
+            <img src="./assets/images/languages/united-flag.svg" alt="english-flag">
+            <span class="text-capitalize"> english </span>
+          </button>
+          <!--languageSelect.end-->
+          <!--languageMenu-->
+          <ul class="dropdown-menu" data-css="languageSelect"></ul>
+          <!--languageMenu.end-->
+        </div>
+      </li>
+      <!--language select-->
+    </ul>
+    <!--addressHeader.end-->
+  </header>
+  <!--#addressHeader.end-->
+  <!--#home-->
+  <header class="home" id="home">
+    <div class="container-fluid">
+      <!--navbar-->
+      <nav class="navbar navbar-expand-lg" data-css="home">
+        <!--brand-->
+        <a class="d-flex navbar-brand" type="navbar-brand" href="#home">
+          <div class="brand-img">
+            <img src="./assets/images/logo/logo.png" class="img-fluid" alt="VIET SIAM TRAVEL">
+          </div>
+          <div class="brand-name">
+            <h3 class="title text-uppercase" id="brand">
+              viet siam travel
+            </h3>
+          </div>
+        </a>
+        <!--brand.end-->
+        <!--button-collapse-->
+        <button class="fa-solid fa-caret-down navbar-toggler" type="button" role="button" data-bs-toggle="collapse"
+          data-bs-target="#mainHeader" aria-controls="mainHeader" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        <!--button-collapse.end-->
+        <!--item-collapse-->
+        <div class="collapse navbar-collapse" id="mainHeader">
+          <ul class="navbar-nav m-auto">
+            <!--item-home-->
+            <li class="nav-item active" nav-item="true">
+              <a href="#home">
+                <span class="text-uppercase"> Home </span>
+              </a>
+            </li>
+            <!--item-home.end-->
+            <!--item-destination-->
+            <li id="dropdownDestination" class="nav-item" nav-item="true">
+              <div class="dropdown" data-position="stasic" data-css="dropdownDestination">
+                <a class="dropdown-toggle" nav-item="true" role="button" data-bs-toggle="collapse" aria-expanded="false"
+                  data-bs-target="#dropDestination">
+                  <span class="text-uppercase"> Destination </span>
+                </a>
+                <!--list-->
+                <div class="dropdown-menu w-100" data-css="dropdownDestination" aria-labelledby="dropdownDestination"
+                  id="dropDestination">
+                  <div class="d-flex" type="dropdownDestination">
+                    <!--card-->
+                    <div class="col-sm-6">
+                      <div class="card" data-css="dropdownDestination">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="card-img">
+                              <img src="./assets/images/destinations/bangkok.jpg" class="img-fluid" aspect-ratio="3/5"
+                                alt="bangkok">
+                            </div>
+                            <div class="card-img-overlay tag-title text-bg-primary">
+                              <h3 class="title text-uppercase">
+                                bangkok
+                              </h3>
+                            </div>
+                          </div>
+                          <div class="col-sm-8">
+                            <div class="card-body">
+                              <p class="text-dark">
+                                abc
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--card.end-->
+                    <!--grid-->
+                    <div class="col-sm-6">
+                      <h3 class="title text-capitalize text-warning">
+                        top destinations
+                      </h3>
+                      <div class="row">
+                        <!--list-1-->
+                        <ul class="col-6">
+                          <li class="row">
+                            <a class="dropdown-item" href="#destination">
+                              <span> Pattaya </span>
+                            </a>
+                          </li>
+                          <li class="row">
+                            <a class="dropdown-item" href="#destination">
+                              <span> Wat Phra Yai </span>
+                            </a>
+                          </li>
+                          <li class="row">
+                            <a class="dropdown-item" href="#destination">
+                              <span> Coral Island </span>
+                            </a>
+                          </li>
+                          <li class="row">
+                            <a class="dropdown-item" href="#destination">
+                              <span> Khao Chee Chan </span>
+                            </a>
+                          </li>
+                          <li class="row">
+                            <a class="dropdown-item" href="#destination">
+                              <span> Wat Phra Kaew </span>
+                            </a>
+                          </li>
+                        </ul>
+                        <!--list-1.end-->
+                        <!--list-2-->
+                        <ul class="col-6">
+                          <li class="row">
+                            <a class="dropdown-item" href="#destination">
+                              <span> Bangkok </span>
+                            </a>
+                          </li>
+                          <li class="row">
+                            <a class="dropdown-item" href="#destination">
+                              <span> Wat Arun </span>
+                            </a>
+                          </li>
+                          <li class="row">
+                            <a class="dropdown-item" href="#destination">
+                              <span> Jomtien Beach </span>
+                            </a>
+                          </li>
+                          <li class="row">
+                            <a class="dropdown-item" href="#destination">
+                              <span> Nong Nooch </span>
+                            </a>
+                          </li>
+                          <li class="row">
+                            <a class="dropdown-item" href="#destination">
+                              <span> Wat Traimit </span>
+                            </a>
+                          </li>
+                        </ul>
+                        <!--list-2.end-->
+                      </div>
+                    </div>
+                    <!--grid.end-->
+                  </div>
+                </div>
+                <!--list.end-->
+              </div>
+            </li>
+            <!--item-destination.end-->
+            <!--item-tour-->
+            <li class="dropdown nav-item" nav-item="true" data-position="relative" data-css="dropdownTour">
+              <a class="dropdown-toggle" role="button" data-bs-toggle="collapse" aria-expanded="false"
+                data-bs-target="#dropTour">
+                <span class="text-uppercase"> Tour </span>
+              </a>
+              <!--list-->
+              <div class="dropdown-menu" data-css="dropdownTour" aria-labelledby="dropdownTour" id="dropTour">
+                <!--col-1-->
+                <h3 class="title text-warning text-capitalize"> Tours 4 day - 3 night </h3>
+                <a class="dropdown-item" href="#tour">
+                  KD1 Package
+                </a>
+                <a class="dropdown-item" href="#tour">
+                  KD2 Package
+                </a>
+                <a class="dropdown-item" href="#tour">
+                  KD3 Package
+                </a>
+                <a class="dropdown-item" href="#tour">
+                  KD4 Package
+                </a>
+                <!--col-1.end-->
+                <div class="dropdown-divider"></div>
+                <!--col-2-->
+                <h3 class="title text-warning text-capitalize"> Tours 5 day - 4 night </h3>
+                <a class="dropdown-item" href="#tour">
+                  KD5 Package
+                </a>
+                <a class="dropdown-item" href="#tour">
+                  KD6 Package
+                </a>
+                <a class="dropdown-item" href="#tour">
+                  KD7 Package
+                </a>
+                <!--col-2.end-->
+              </div>
+              <!--list.end-->
+            </li>
+
+            <!--item-tour.end-->
+            <!--item-hotel-->
+            <li class="nav-item" nav-item="true">
+              <a href="#hotels">
+                <span class="text-uppercase"> Hotel </span>
+              </a>
+            </li>
+            <!--item-hotel.end-->
+            <!--item-about-->
+            <li class="nav-item" nav-item="true">
+              <a href="#about">
+                <span class="text-uppercase"> About </span>
+              </a>
+            </li>
+            <!--item-about.end-->
+          </ul>
+          <!--button-booking-->
+          <button class="btn btn-info nav-btn" type="submit" nav-item="true" hover="fill-right">
+            <span class="text-white text-uppercase"> booking </span>
+          </button>
+          <!--button-booking.end-->
+        </div>
+        <!--item-collapse-->
+      </nav>
+      <!--navbar-->
+    </div>
+  </header>
+  <!--#home.end-->
+  <!--#booking-->
+  <section class="banner" id="booking">
+    <div class="container-fluid" data-css="booking">
+      <div class="card text-bg-dark">
+        <div class="card-img" aspect-ratio="16:9">
+          <img src="./assets/images/parallax/parallax-4.jpg" class="img-fluid" alt="thailand tourist">
+        </div>
+        <div class="card-navbar-underlay" data-css="darkblue"></div>
+        <div class="card-img-overlay text-white" data-css="booking">
+          <div class="d-flex input-group">
+            <h3 class="title text-capitalize text-primary">
+              give us your information
+            </h3>
+            <p>
+              We will contact you as soon as possible.
+            </p>
+            <label for="">  </label>
+            <input type="text" aria-label="username" class="form-control w-75" placeholder="your email address">
+            <input type="text" aria-label="phone" class="form-control w-75" placeholder="your phone number">
+            <button class="btn btn-warning" type="submit" hover="fill-right">
+              <span class="text-uppercase"> subcribe </span>
+              <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--#booking.end-->
+  <!--#newsLetter-->
+  <section class="section" id="newsLetter">
+    <!--title-->
+    <div class="container-fluid" type="title">
+      <div class="d-flex">
+        <h2 class="title text-uppercase" type="background">
+          subscribe
+        </h2>
+        <h2 class="title text-danger text-capitalize">
+          more newsletter
+        </h2>
+        <h2 class="subtitle text-black-50">
+          Subscribe for updates & promotions
+        </h2>
+      </div>
+    </div>
+    <!--title.end-->
+    <!--newsLetter-->
+    <div class="parallax" type="parallax-2">
+      <!--content-group-->
+      <div class="container-fluid" type="newsLetter">
+        <div class="card-group">
+          <!--card-->
+          <div class="card">
+            <div class="card-body">
+              <p>
+                Design your own adventure, choose your own path, decide how and when to travel, the level of service and
+                the hotel standard. Pack in as many activities and locations as possible, or incorporate some relaxation
+                and free time to explore on your own terms. Our experts will give advice and assist you to craft the
+                ideal
+                trip.
+              </p>
+              <h3 class="title text-capitalize text-secondary">
+                stay connected
+              </h3>
+              <p>
+                Contact us now to have all of your tour-related question answered.
+              </p>
+              <div class="icon-group text-center">
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+          </div>
+          <!--card-end-->
+          <!--input-->
+          <div class="card">
+            <div class="input-group">
+              <h3 class="title text-capitalize text-primary">
+                subcribe for more newsletter from us
+              </h3>
+              <p>
+                Subscribe to our newsletter for special promotions & cool updates.
+              </p>
+              <input type="text" aria-label="username" class="form-control" placeholder="your email address">
+              <input type="text" aria-label="phone" class="form-control" placeholder="your phone number">
+              <button class="btn btn-warning" type="submit" hover="fill-right">
+                <span class="text-uppercase"> subcribe </span>
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
+            </div>
+          </div>
+          <!--input.end-->
+        </div>
+      </div>
+      <!--content-group.end-->
+    </div>
+    </div>
+    <!--newsLetter.end-->
+  </section>
+  <!--#newsLetter-->
+  <!--#footer-->
+  <footer class="footer" id="footer">
+    <!--footer-->
+    <div class="container-fluid" type="footer">
+      <div class="d-flex" type="footer">
+        <!--logo-->
+        <div class="logo">
+          <div class="d-flex" type="logo">
+            <img src="./assets/images/logo/logo.png" class="img-fluid" alt="VIET SIAM TRAVEL">
+            <span>
+              <h3 class="title text-danger">
+                VIET SIAM TRAVEL
+              </h3>
+            </span>
+          </div>
+        </div>
+        <!--logo.end-->
+        <!--contact-->
+        <div class="contact-us text-light">
+          <div class="d-flex" type="contact-us">
+            <h4 class="title text-uppercase">
+              Contact Us:
+            </h4>
+            <div class="col">
+              <i class="fa-solid fa-phone"></i>
+              <span> +84.838.674.298 </span>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-envelope"></i>
+              <span> vanvanle1983@gmail.com </span>
+            </div>
+          </div>
+        </div>
+        <!--contact.end-->
+        <!--payment-->
+        <div class="payment text-light">
+          <div class="d-flex" type="payment">
+            <h4 class="title text-uppercase">
+              Pay Safely With Us:
+            </h4>
+            <span> The payment is encrypted and transmitted securely with an SSL protocol. </span>
+            <div class="payment-img">
+              <img
+                src="https://a6e8z9v6.stackpathcdn.com/traveltour/main4/wp-content/uploads/2019/04/creditcard-logo.png"
+                alt="payment">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--payment.end-->
+    </div>
+    </div>
+    <!--footer.end-->
+  </footer>
+  <!--#footer.end-->
+  <!--#backTop-->
+  <a href="#banner" class="btn" id="backTop" aria-label="to top page">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+  <!--#backTop.end-->
+  <!--JQuery @3.6.3 cdnjs-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
+    integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--JQuery.end-->
+  <!--Popper @2.11.6 cdnjs-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"
+    integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--Popper.end-->
+  <!--Bootstrap @5.2.3 cdnjs-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
+    integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--Bootstrap.end-->
+  <!--Bootstrap Datepicker plugin @-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+    integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--Datepicker.end-->
+  <!--Swiper @9.0.5 cdnjs-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.js"
+    integrity="sha512-cEcJcdNCHLm3YSMAwsI/NeHFqfgNQvO0C27zkPuYZbYjhKlS9+kqO5hZ9YltQ4GaTDpePDQ2SrEk8gHUVaqxig=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <!--Swiper.end-->
+  <!--Custom js @1.0.0 assets-->
+  <script src="./assets/.js/scripts.js"></script>
+  <script src="./assets/.js/tourPackage.js"></script>
+  <script src="./assets/.js/languageSelect.js"></script>
+  <!--Custom.end-->
+</body>
+<!--body-->
+
+</html>

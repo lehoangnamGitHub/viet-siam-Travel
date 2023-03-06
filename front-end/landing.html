@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" Content-Type="text/html">
+  <meta content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viet Siam Travel</title>
+  <!--Bootstrap @5.2.3 cdnjs-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Bootstrap.end-->
+  <!--Bootstrap Datepicker plugin @1.9.0 cdnjs-->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Datepicker.end-->
+  <!--Awesome font @6.2.1 cdnjs-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Awesome font @6.2.1 cdnjs-->
+  <!--Swiper @9.0.5 cdnjs-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.css"
+    integrity="sha512-CTWIgc35lLPcCl1OP7MNcrrES+jyBBvMEz8Cqx/v0hifPNjIpPsd/jUYTJ/41CYCrQdfuw7LopKaqqjXVLqejg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Swiper.end-->
+  <!--Custom css @1.0.0 assets-->
+  <link rel="stylesheet" href="./assets/.css/format.css">
+  <link rel="stylesheet" href="./assets/.css/text.css">
+  <link rel="stylesheet" href="./assets/.css/styles.css">
+  <link rel="stylesheet" href="./assets/.css/color.css">
+  <link rel="stylesheet" href="./assets/.css/swiper.css">
+  <!--Custom.end-->
+</head>
+
+<body>
+
+  <!--address-header-->
+  <header class="address-header" id="addressHeader">
+    <nav class="address-header-nav nav d-flex">
+
+      <!--languageSelect-->
+      <form class="language-select d-flex" id="languageSelect">
+
+        <ul class="language-select-nav-item nav-item d-flex">
+          <li class="language-select-dropdown dropdown">
+
+            <button class="language-select-btn btn" role="button" aria-expanded="false" id="language" type="button"
+              data-bs-toggle="dropdown">
+              <img class="language-select-img" src="./assets/images/languages/united-flag.svg" alt="english-flag">
+              <span class="text-capitalize"> english </span>
+            </button>
+
+            <ul class="language-select-dropdown-menu dropdown-menu"></ul>
+
+          </li>
+        </ul>
+
+      </form>
+
+      <!--contact-us-->
+      <form class="contact-us d-flex" id="contactUs">
+        <label class="contact-us-label text-capitalize text-nowrap"> contact us </label>
+
+        <ul class="contact-us-nav-item nav-item d-flex">
+
+          <li class="contact-us-nav-link nav-link d-flex">
+            <button class="contact-us-btn btn" type="button" data-bs-toggle="collapse" data-bs-target="#email"
+              aria-expanded="false" aria-controls="email" aria-label="envelope">
+              <i class="fa-solid fa-envelope"></i>
+            </button>
+            <a class="contact-us-collapse collapse collapse-horizontal" id="email">
+              <span class="text-light font-style-italic"> vanvanle1983@gmail.com </span>
+            </a>
+          </li>
+
+          <li class="contact-us-nav-link nav-link d-flex">
+            <button class="contact-us-btn btn" type="button" data-bs-toggle="collapse" data-bs-target="#phone"
+              aria-expanded="false" aria-controls="phone" aria-label="phone">
+              <i class="fa-solid fa-phone"></i>
+            </button>
+            <a class="contact-us-collapse collapse collapse-horizontal" id="phone">
+              <span class="text-light font-style-italic"> +84.838.674.298 </span>
+            </a>
+          </li>
+
+        </ul>
+
+      </form>
+
+    </nav>
+  </header>
+
+  <!--home-->
+  <header class="home" id="home">
+    <div class="home-container container-fluid">
+
+      <!--navbar-->
+      <nav class="home-navbar navbar navbar-expand-lg" data-css="home">
+
+        <!--brand-->
+        <div class="home-navbar-brand navbar-brand d-flex">
+          <div class="brand-img">
+            <img src="./assets/images/logo/logo.png" class="home-navbar-brand-logo img-fluid" alt="VIET SIAM TRAVEL">
+          </div>
+          <div class="home-navbar-brand-name">
+            <h3 class="title text-uppercase" id="brand">
+              viet siam travel
+            </h3>
+          </div>
+        </div>
+
+        <!--button-collapse-->
+        <button class="home-navbar-toggler navbar-toggler fa-solid fa-caret-down" type="button" role="button"
+          data-bs-toggle="collapse" data-bs-target="#mainHeader" aria-controls="mainHeader" aria-expanded="false"
+          aria-label="Toggle navigation">
+        </button>
+
+        <!--item-collapse-->
+        <div class="home-navbar-collapse navbar-collapse collapse" id="mainHeader">
+          <ul class="home-navbar-nav navbar-nav m-auto">
+
+            <!--item-home-->
+            <li class="home-nav-item nav-item active">
+              <a class="text-uppercase" href="#home">
+                home
+              </a>
+            </li>
+
+            <!--item-destination-->
+            <li class="home-nav-item nav-item" id="dropdownDestination">
+              <a class="text-uppercase" href="#destination">
+                destination
+              </a>
+            </li>
+
+            <!--item-tour-->
+            <li class="home-nav-item nav-item">
+              <a class="text-uppercase" href="#tourPackage">
+                tour
+              </a>
+            </li>
+
+            <!--item-hotel-->
+            <li class="home-nav-item nav-item">
+              <a class="text-uppercase" href="#hotel">
+                hotel
+              </a>
+            </li>
+
+            <!--item-about-->
+            <li class="home-nav-item nav-item">
+              <a class="text-uppercase" href="#about">
+                about
+              </a>
+            </li>
+
+          </ul>
+          <!--button-booking-->
+          <button class="home-btn btn btn-info btn-fill-right" type="submit">
+            <span class="text-light text-uppercase"> booking </span>
+          </button>
+
+        </div>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <!--banner-->
+  <section class="banner" id="banner">
+    <div class="banner-container container-fluid">
+
+      <!--swiper-->
+      <div class="banner-swiper swiper" id="swiperBanner">
+        <div class="banner-swiper-wrapper swiper-wrapper">
+
+          <!--slide-1-->
+          <div class="swiper-slide">
+            <div class="banner-card card text-bg-dark">
+              <div class="banner-card-img card-img banner-bg-1"></div>
+              <div class="banner-card-img-overlay card-img-overlay"></div>
+            </div>
+          </div>
+
+          <!--slide-2-->
+          <div class="swiper-slide">
+            <div class="banner-card card text-bg-dark">
+              <div class="banner-card-img card-img banner-bg-2"></div>
+              <div class="banner-card-img-overlay card-img-overlay"></div>
+            </div>
+          </div>
+
+          <!--slide-3-->
+          <div class="swiper-slide">
+            <div class="banner-card card text-bg-dark">
+              <div class="banner-card-img card-img banner-bg-3"></div>
+              <div class="banner-card-img-overlay card-img-overlay"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--banner-overlay-->
+      <div class="banner-overlay banner-overlay-index-1"></div>
+
+      <!--banner-overlay-->
+      <div class="banner-overlay d-flex banner-overlay-index-2">
+
+        <!--banner-content-->
+        <div class="banner-content">
+
+          <div class="banner-content-group">
+
+            <!--swiper-navigation-->
+            <div class="banner-swiper-navigation swiper-button-next"></div>
+            <div class="banner-swiper-navigation swiper-button-prev"></div>
+
+            <!--title-->
+            <h1 class="subtitle text-light text-capitalize">
+              welcome to
+            </h1>
+            <h1 class="title text-uppercase border-bottom text-light">
+              viet siam travel
+            </h1>
+
+            <!--content-->
+            <p class="font-style-italic"></p>
+
+          </div>
+
+          <!--banner-btn-->
+          <button class="banner-btn btn btn-info btn-fill-right text-light " type="submit">
+            <span class="text-uppercase"> booking </span>
+            <i class="fa-solid fa-plane"></i>
+          </button>
+
+        </div>
+
+      </div>
+
+      <!--why-us-->
+      <div class="why-us" id="whyUs">
+
+        <div class="why-us-card-group card-group parallax parallax-4">
+
+          <!--content-1-->
+          <div class="why-us-card why-us-card-bg-1 card">
+            <div class="why-us-card-body card-body text-center">
+
+              <i class="fa-solid fa-umbrella-beach text-color-10 font-size-32px"></i>
+              <h3 class="title text-color-5">
+                Professional
+              </h3>
+
+              <p class="font-style-italic text-color-7">
+                Viet Siam Travel affirms that we are an experienced and senior travel operator.
+              </p>
+
+            </div>
+          </div>
+
+          <!--content-2-->
+          <div class="why-us-card why-us-card-bg-2 card">
+            <div class="why-us-card-body card-body text-center">
+
+              <i class="fa-solid fa-martini-glass-citrus text-color-8 font-size-32px"></i>
+
+              <h3 class="title text-color-5">
+                Luxury & Relax
+              </h3>
+
+              <p class="font-style-italic text-color-7">
+                Proud to accommodate the best service, the most luxurious venue, from the highest point of the hotel.
+              </p>
+
+            </div>
+          </div>
+
+          <!--content-3-->
+          <div class="why-us-card why-us-card-bg-3 card">
+            <div class="why-us-card-body card-body text-center">
+
+              <i class="fa-solid fa-hand-holding-heart text-danger font-size-32px"></i>
+
+              <h3 class="title text-color-5">
+                Save Valuable Time
+              </h3>
+
+              <p class="font-style-italic text-color-7">
+                It is our absolute pleasure to show you everything we love about our region.
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!--highlight-->
+  <section class="highlight section" id="highlightTour">
+
+    <!--title-->
+    <div class="container-fluid">
+      <div class="section-title-group d-flex">
+
+        <h1 class="section-title title text-uppercase text-light">
+          <span class="section-title-bg bg-index-1">
+            highlight
+          </span>
+          overview
+        </h1>
+
+        <h2 class="subtitle text-color-1">
+          Discovering unlimited new worlds and vibrant cultures!
+        </h2>
+        
+      </div>
+    </div>
+
+    <div class="highlight-container container-fluid d-flex">
+
+      <!--highlight-video-->
+      <div class="highlight-video d-flex" id="videoHighlight">
+        <div class="highlight-video-container">
+
+          <!--swiper-->
+          <div class="highlight-video-swiper swiper" id="swiperVideoHighlight">
+            <div class="highlight-video-swiper-wrapper swiper-wrapper">
+  
+              <!--slide-1-->
+              <div class="swiper-slide">
+                <div class="highlight-card card">
+                  <div class="card-video">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/n1I0_l_Tu-U" title="viet Siam Travel"
+                      frameborder="0" aspect-ratio="16:9"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+  
+              <!--slide-2-->
+              <div class="swiper-slide">
+                <div class="highlight-card card">
+                  <div class="card-video">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/cii2FcMUshU" title="viet Siam Travel"
+                      frameborder="0" aspect-ratio="16:9"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+  
+              <!--slide-3-->
+              <div class="swiper-slide">
+                <div class="highlight-card card">
+                  <div class="card-video">
+                    <iframe class="youtube-video" src="https://youtube.com/embed/OCQ51RkZ8Hs" title="viet Siam Travel"
+                      frameborder="0" aspect-ratio="16:9"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+  
+            <!--control-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="highlight-video-swiper-pagination swiper-pagination"></div>
+  
+          </div>
+
+        </div>
+      </div>
+
+      <!--highlight-news-->
+      <div class="highlight-news" id="newsHighlight">
+        <div class="highlight-news-container">
+
+          <!--swiper-->
+          <div class="swiper" id="swiperNewsHighlight">
+            <div class="swiper-wrapper">
+  
+              <!--slide-1-->
+              <div class="swiper-slide">
+  
+                <div class="highlight-card card d-flex card-top">
+                  <div class="col-sm-4">
+                    <div class="highlight-card-img card-img">
+                      <img src="./assets/images/highlights/highlight-1.jpg" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="highlight-card-body card-body">
+                      <h3 class="title text-capitalize">
+                        Card title
+                      </h3>
+                      <p class="font-style-italic">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="highlight-card card d-flex card-center">
+                  <div class="col-sm-4">
+                    <div class="highlight-card-img card-img">
+                      <img src="./assets/images/highlights/highlight-2.jpg" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="highlight-card-body card-body">
+                      <h3 class="title text-capitalize">
+                        Card title
+                      </h3>
+                      <p class="font-style-italic">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="highlight-card card d-flex card-bottom">
+                  <div class="col-sm-4">
+                    <div class="highlight-card-img card-img">
+                      <img src="./assets/images/highlights/highlight-3.jpg" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="highlight-card-body card-body">
+                      <h3 class="title text-capitalize">
+                        Card title
+                      </h3>
+                      <p class="font-style-italic">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <!--slide-2-->
+              <div class="swiper-slide">
+  
+                <div class="highlight-card card d-flex card-top">
+                  <div class="col-sm-4">
+                    <div class="highlight-card-img card-img">
+                      <img src="./assets/images/highlights/highlight-4.jpg" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="highlight-card-body card-body">
+                      <h3 class="title text-capitalize">
+                        Card title
+                      </h3>
+                      <p class="font-style-italic">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="highlight-card card d-flex card-center">
+                  <div class="col-sm-4">
+                    <div class="highlight-card-img card-img">
+                      <img src="./assets/images/highlights/highlight-5.jpg" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="highlight-card-body card-body">
+                      <h3 class="title text-capitalize">
+                        Card title
+                      </h3>
+                      <p class="font-style-italic">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="highlight-card card d-flex card-bottom">
+                  <div class="col-sm-4">
+                    <div class="highlight-card-img card-img">
+                      <img src="./assets/images/highlights/highlight-6.jpg" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="highlight-card-body card-body">
+                      <h3 class="title text-capitalize">
+                        Card title
+                      </h3>
+                      <p class="font-style-italic">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+  
+            <!--control-->
+            <div class="highlight-news-swiper-pagination swiper-pagination fraction"></div>
+            <div class="swiper-scrollbar"></div>
+  
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--destinations-->
+  <section class="destination section" id="destination">
+
+    <!--title-->
+    <div class="container-fluid">
+      <div class="d-flex section-title-group">
+
+        <h1 class="section-title title text-uppercase text-color-9">
+          <span class="section-title-bg">
+            Explore
+          </span>
+          Top Destinations
+        </h1>
+
+        <h2 class="subtitle text-color-2">
+          Explore your life, travel where you want!
+        </h2>
+
+      </div>
+    </div>
+
+    <!--destination-->
+    <div class="destination-container container-fluid">
+      <div class="destination-swiper swiper" id="swiperDestination">
+        <div class="swiper-wrapper"></div>
+
+        <!--control-->
+        <div class="destination-swiper-pagination swiper-button-next"></div>
+        <div class="destination-swiper-pagination swiper-button-prev"></div>
+        <div class="swiper-scrollbar"></div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!--tourPackage-->
+  <section class="section" id="tourPackage">
+    <!--title-->
+    <div class="container-fluid">
+      <div class="d-flex section-title-group">
+        <h2 class="section-title-bg text-uppercase">
+          best
+        </h2>
+        <h2 class="section-title title text-danger text-uppercase">
+          tour packages
+        </h2>
+        <h2 class="subtitle text-black-50">
+          Pick yours...
+        </h2>
+      </div>
+    </div>
+    <!--title.end-->
+    <!--tourPackage-->
+    <div class="container-fluid" type="tourPackage">
+      <!--swiper-->
+      <div class="swiper" id="swiperTourPackage">
+        <!--slide-->
+        <div class="swiper-wrapper"></div>
+        <!--slide.end-->
+        <!--control-->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-scrollbar"></div>
+        <!--control.end-->
+      </div>
+      <!--swiper.end-->
+    </div>
+    <!--tourPackage.end-->
+  </section>
+
+  <!--hotel-->
+  <section class="section" id="hotel">
+    <div class="container-fluid">
+      <!--title-->
+      <div class="d-flex section-title-group">
+        <h2 class="section-title-bg text-uppercase">
+          luxurious
+        </h2>
+        <h2 class="section-title title text-danger text-uppercase">
+          hotel & resort
+        </h2>
+        <h2 class="subtitle text-black-50">
+          Immersive in the fresh nature, participate in entertainment activities, relax.
+        </h2>
+      </div>
+      <!--title.end-->
+    </div>
+    <!--hotel-->
+    <div class="container-fluid" type="hotel">
+      <!--card-group-->
+      <div class="card-group">
+        <!--card-left-->
+        <div class="col">
+          <!--card-top-->
+          <div class="card" type="img-bottom">
+            <div class="card-img" type="aspect-ratio = 16:9">
+              <img src="./assets/images/hotels/hotel-1.jpg" class="img-fluid" alt="restaurant">
+            </div>
+            <div class="card-img-overlay" type="overlay-bottom">
+              <div class="description">
+                <h3 class="title text-capitalize">
+                  restaurant
+                </h3>
+                <p>
+                  Abcxyz=
+                </p>
+              </div>
+              <a href="" class="text-capitalize">read more</a>
+            </div>
+          </div>
+          <!--card-top.end-->
+          <!--card-bottom-->
+          <div class="card" type="img-top">
+            <div class="card-img">
+              <img src="./assets/images/hotels/hotel-2.jpg" class="img-fluid" alt="services">
+            </div>
+            <div class="card-img-overlay" type="overlay-top">
+              <div class="description">
+                <h3 class="title text-capitalize">
+                  services
+                </h3>
+                <p>
+                  Abcxyz
+                </p>
+              </div>
+              <a href="" class="text-capitalize">read more</a>
+            </div>
+          </div>
+          <!--card-bottom.end-->
+        </div>
+        <!--card-left.end-->
+        <!--card-center-->
+        <div class="col">
+          <!--card-top-->
+          <div class="card" type="img-top">
+            <div class="card-img" type="aspect-ratio = 4:3">
+              <img src="./assets/images/hotels/hotel-3.jpg" class="img-fluid" alt="spa">
+            </div>
+            <div class="card-img-overlay" type="overlay-top">
+              <div class="description">
+                <h3 class="title text-capitalize">
+                  spa
+                </h3>
+                <p>
+                  Peaceful oasis with a distinctly local touch and herbal scent will offer you a total relaxation after
+                  a
+                  long day of exploring.
+                </p>
+              </div>
+              <a href="" class="text-capitalize">read more</a>
+            </div>
+          </div>
+          <!--card-top.end-->
+          <!--card-bottom-->
+          <div class="card" type="img-top">
+            <div class="card-img">
+              <img src="./assets/images/hotels/hotel-4.png" class="img-fluid" alt="suites">
+            </div>
+            <div class="card-img-overlay" type="overlay-top">
+              <div class="description">
+                <h3 class="title text-capitalize">
+                  suites
+                </h3>
+                <p>
+                  Abcxyz=
+                </p>
+              </div>
+              <a href="" class="text-capitalize">read more</a>
+            </div>
+          </div>
+          <!--card-bottom.end-->
+        </div>
+        <!--card-center.end-->
+        <!--card-right-->
+        <div class="card" type="img-center">
+          <div class="card-img" type="aspect-ratio = 3:4">
+            <img src="./assets/images/hotels/hotel-5.jpg" class="img-fluid" alt="relaxation">
+          </div>
+          <div class="banner-card-img-overlay card-img-overlay bg-transparent text-light" type="overlay-center">
+            <div class="description">
+              <h3 class="title text-capitalize">
+                relaxation
+              </h3>
+              <p>
+                This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.
+              </p>
+            </div>
+            <a href="" class="text-capitalize">read more</a>
+          </div>
+        </div>
+        <!--card-center.end-->
+      </div>
+      <!--card-group.end-->
+    </div>
+    <!--hotel.end-->
+  </section>
+
+  <!--newsLetter-->
+  <section class="section" id="newsLetter">
+    <!--title-->
+    <div class="container-fluid">
+      <div class="d-flex section-title-group">
+        <h2 class="section-title-bg text-uppercase">
+          subscribe
+        </h2>
+        <h2 class="section-title title text-danger text-uppercase">
+          more newsletter
+        </h2>
+        <h2 class="subtitle text-black-50">
+          Subscribe for updates & promotions
+        </h2>
+      </div>
+    </div>
+    <!--title.end-->
+    <!--newsLetter-->
+    <div class="parallax" type="parallax-2">
+      <!--content-group-->
+      <div class="container-fluid" type="newsLetter">
+        <div class="card-group">
+          <!--card-->
+          <div class="card">
+            <div class="card-body">
+              <p>
+                Design your own adventure, choose your own path, decide how and when to travel, the level of service and
+                the hotel standard. Pack in as many activities and locations as possible, or incorporate some relaxation
+                and free time to explore on your own terms. Our experts will give advice and assist you to craft the
+                ideal
+                trip.
+              </p>
+              <h3 class="title text-capitalize text-secondary">
+                stay connected
+              </h3>
+              <p>
+                Contact us now to have all of your tour-related question answered.
+              </p>
+              <div class="icon-group text-center">
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+          </div>
+          <!--card-end-->
+          <!--input-->
+          <div class="card">
+            <div class="input-group">
+              <h3 class="title text-capitalize text-primary">
+                subcribe for more newsletter from us
+              </h3>
+              <p>
+                Subscribe to our newsletter for special promotions & cool updates.
+              </p>
+              <input type="text" aria-label="username" class="form-control" placeholder="your email address">
+              <input type="text" aria-label="phone" class="form-control" placeholder="your phone number">
+              <button class="btn btn-warning btn-fill-right" type="submit">
+                <span class="text-uppercase"> subcribe </span>
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
+            </div>
+          </div>
+          <!--input.end-->
+        </div>
+      </div>
+      <!--content-group.end-->
+    </div>
+    </div>
+    <!--newsLetter.end-->
+  </section>
+
+  <!--footer-->
+  <footer class="footer" id="footer">
+    <!--footer-->
+    <div class="container-fluid" type="footer">
+      <div class="d-flex" type="footer">
+        <!--logo-->
+        <div class="logo">
+          <div class="d-flex" type="logo">
+            <img src="./assets/images/logo/logo.png" class="img-fluid" alt="VIET SIAM TRAVEL">
+            <span>
+              <h3 class="title text-danger">
+                VIET SIAM TRAVEL
+              </h3>
+            </span>
+          </div>
+        </div>
+        <!--logo.end-->
+        <!--contact-->
+        <div class="contact-us text-light">
+          <div class="d-flex" type="contact-us">
+            <h4 class="title text-uppercase">
+              Contact Us:
+            </h4>
+            <div class="col">
+              <i class="fa-solid fa-phone"></i>
+              <span> +84.838.674.298 </span>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-envelope"></i>
+              <span> vanvanle1983@gmail.com </span>
+            </div>
+          </div>
+        </div>
+        <!--contact.end-->
+        <!--payment-->
+        <div class="payment text-light">
+          <div class="d-flex" type="payment">
+            <h4 class="title text-uppercase">
+              Pay Safely With Us:
+            </h4>
+            <span> The payment is encrypted and transmitted securely with an SSL protocol. </span>
+            <div class="payment-img">
+              <img
+                src="https://a6e8z9v6.stackpathcdn.com/traveltour/main4/wp-content/uploads/2019/04/creditcard-logo.png"
+                alt="payment">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--payment.end-->
+    </div>
+    </div>
+    <!--footer.end-->
+  </footer>
+
+  <!--backToTop-->
+  <a href="#banner" class="btn" id="backTop" aria-label="to top page">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <!--JQuery @3.6.3 cdnjs-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
+    integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--JQuery.end-->
+  <!--Popper @2.11.6 cdnjs-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"
+    integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--Popper.end-->
+  <!--Bootstrap @5.2.3 cdnjs-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
+    integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--Bootstrap.end-->
+  <!--Bootstrap Datepicker plugin @-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+    integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--Datepicker.end-->
+  <!--Swiper @9.0.5 cdnjs-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.js"
+    integrity="sha512-cEcJcdNCHLm3YSMAwsI/NeHFqfgNQvO0C27zkPuYZbYjhKlS9+kqO5hZ9YltQ4GaTDpePDQ2SrEk8gHUVaqxig=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <!--Swiper.end-->
+  <!--Custom js @1.0.0 assets-->
+  <script src="./assets/.js/scripts.js"></script>
+  <script src="./assets/.js/tourPackage.js"></script>
+  <script src="./assets/.js/destination.js"></script>
+  <script src="./assets/.js/languageSelect.js"></script>
+  <script>
+    /** swiperBanner */
+    var swiperBanner = new Swiper("#swiperBanner", {
+      slidesPerView: 1,
+      centeredSlides: true,
+      speed: 800,
+      spaceBetween: 0,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    /** swiperDestination */
+    var swiperDestination = new Swiper("#swiperDestination", {
+      breakpoints: {
+        360: {
+          slidesPerView: 1,
+        },
+        480: {
+          slidesPerView: 2,
+        },
+        720: {
+          slidesPerView: 3,
+        },
+        1280: {
+          slidesPerView: 4,
+        }
+      },
+      spaceBetween: 40,
+      loop: true,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    /** swiperVideoHighlight */
+    var swiperVideoHighlight = new Swiper("#swiperVideoHighlight", {
+      slidesPerView: 1,
+      centeredSlides: true,
+      spaceBetween: 16,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    /** swiperNewsHighlight */
+    var swiperNewsHighlight = new Swiper("#swiperNewsHighlight", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+      },
+    });
+
+    /** swiperTourPackage */
+    var swiperNewsHighlight = new Swiper("#swiperTourPackage", {
+      breakpoints: {
+        280: {
+          slidesPerView: 1,
+        },
+        495: {
+          slidesPerView: 2,
+        },
+        880: {
+          slidesPerView: 3,
+        },
+        1280: {
+          slidesPerView: 4,
+        },
+      },
+      spaceBetween: 24,
+      loop: false,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+  </script>
+  <!--Custom.end-->
+</body>
+<!--body-->
+
+</html>

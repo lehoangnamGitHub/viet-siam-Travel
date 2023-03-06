@@ -1,0 +1,103 @@
+:root {
+  --white-transparent: rgba(255 255 255 / 0.00);
+  --white-25: rgba(255 255 255 / 0.25);
+  --white-50: rgba(255 255 255 / 0.50);
+  --white-75: rgba(255 255 255 / 0.75);
+  --white: rgba(255 255 255 / 1.00);
+
+  --black-transparent: rgba(0 0 0 / 0.00);
+  --black-25: rgba(0 0 0 / 0.25);
+  --black-50: rgba(0 0 0 / 0.50);
+  --black-75: rgba(0 0 0 / 0.75);
+  --black: rgba(0 0 0 / 1.00);
+
+  --theme-color-1: #979dac;
+  --theme-color-2: #7d8597;
+  --theme-color-3: #5c677d;
+  --theme-color-4: #33415c;
+  --theme-color-5: #001233;
+  --theme-color-6: #001845;
+  --theme-color-7: #002855;
+  --theme-color-8: #023e7d;
+  --theme-color-9: #0353a4;
+  --theme-color-10: #0466c8;
+}
+
+.text-color {
+  &-1 {
+    color: var(--theme-color-1);
+  }
+
+  &-2 {
+    color: var(--theme-color-2);
+  }
+
+  &-3 {
+    color: var(--theme-color-3);
+  }
+
+  &-4 {
+    color: var(--theme-color-4);
+  }
+
+  &-5 {
+    color: var(--theme-color-5);
+  }
+
+  &-6 {
+    color: var(--theme-color-6);
+  }
+
+  &-7 {
+    color: var(--theme-color-7);
+  }
+
+  &-8 {
+    color: var(--theme-color-8);
+  }
+
+  &-9 {
+    color: var(--theme-color-9);
+  }
+
+  &-10 {
+    color: var(--theme-color-10);
+  }
+}
+
+.text {
+  &-gradient-darkblue-cyan {
+    background: -webkit-linear-gradient(#001233, #0466c8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &-gradient-cyan-darkblue {
+    background: -webkit-linear-gradient(cyan, darkblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &-gradient-darkred-orange {
+    background: -webkit-linear-gradient(darkred, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &-gradient-orange-red {
+    background: -webkit-linear-gradient(orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &-gradient-yellow-darkorange {
+    background: -webkit-linear-gradient(yellow, darkorange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
