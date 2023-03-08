@@ -16,7 +16,7 @@ $(document).ready(function () {
     const element = destinations[index];
     var num = index + 1;
     var idSlide = 'destination-slide-' + num;
-    var swiperWrapper = $('#swiperDestination .swiper-wrapper')
+    var swiperWrapper = $('#destination-swiper .swiper-wrapper')
     var swiperSlide = document.createElement('div');
     $(swiperSlide)
       .attr({

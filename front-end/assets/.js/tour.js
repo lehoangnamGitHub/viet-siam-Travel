@@ -13,7 +13,7 @@ $(document).ready(function () {
     const element = packages[index];
     var num = index + 1;
     var idSlide = 'slide-' + num;
-    var swiperWrapper = $('#swiperTourPackage .swiper-wrapper')
+    var swiperWrapper = $('#tour-swiper .swiper-wrapper')
     var swiperSlide = document.createElement('div');
     $(swiperSlide)
       .attr({

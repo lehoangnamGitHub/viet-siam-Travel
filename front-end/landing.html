@@ -5,398 +5,353 @@
   <meta charset="utf-8" Content-Type="text/html">
   <meta content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viet Siam Travel</title>
+
+  <title> Viet Siam Travel </title>
+
   <!--Bootstrap @5.2.3 cdnjs-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
     integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--Bootstrap.end-->
+
   <!--Bootstrap Datepicker plugin @1.9.0 cdnjs-->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
     integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--Datepicker.end-->
+
   <!--Awesome font @6.2.1 cdnjs-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--Awesome font @6.2.1 cdnjs-->
+
   <!--Swiper @9.0.5 cdnjs-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.css"
     integrity="sha512-CTWIgc35lLPcCl1OP7MNcrrES+jyBBvMEz8Cqx/v0hifPNjIpPsd/jUYTJ/41CYCrQdfuw7LopKaqqjXVLqejg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--Swiper.end-->
+
   <!--Custom css @1.0.0 assets-->
   <link rel="stylesheet" href="./assets/.css/format.css">
   <link rel="stylesheet" href="./assets/.css/text.css">
   <link rel="stylesheet" href="./assets/.css/styles.css">
-  <link rel="stylesheet" href="./assets/.css/color.css">
+  <link rel="stylesheet" href="./assets/.css/theme.css">
   <link rel="stylesheet" href="./assets/.css/swiper.css">
-  <!--Custom.end-->
+
 </head>
 
 <body>
 
-  <!--address-header-->
-  <header class="address-header" id="addressHeader">
-    <nav class="address-header-nav nav d-flex">
-
-      <!--languageSelect-->
-      <form class="language-select d-flex" id="languageSelect">
-
-        <ul class="language-select-nav-item nav-item d-flex">
-          <li class="language-select-dropdown dropdown">
-
-            <button class="language-select-btn btn" role="button" aria-expanded="false" id="language" type="button"
-              data-bs-toggle="dropdown">
-              <img class="language-select-img" src="./assets/images/languages/united-flag.svg" alt="english-flag">
-              <span class="text-capitalize"> english </span>
-            </button>
-
-            <ul class="language-select-dropdown-menu dropdown-menu"></ul>
-
-          </li>
-        </ul>
-
-      </form>
-
-      <!--contact-us-->
-      <form class="contact-us d-flex" id="contactUs">
-        <label class="contact-us-label text-capitalize text-nowrap"> contact us </label>
-
-        <ul class="contact-us-nav-item nav-item d-flex">
-
-          <li class="contact-us-nav-link nav-link d-flex">
-            <button class="contact-us-btn btn" type="button" data-bs-toggle="collapse" data-bs-target="#email"
-              aria-expanded="false" aria-controls="email" aria-label="envelope">
-              <i class="fa-solid fa-envelope"></i>
-            </button>
-            <a class="contact-us-collapse collapse collapse-horizontal" id="email">
-              <span class="text-light font-style-italic"> vanvanle1983@gmail.com </span>
-            </a>
-          </li>
-
-          <li class="contact-us-nav-link nav-link d-flex">
-            <button class="contact-us-btn btn" type="button" data-bs-toggle="collapse" data-bs-target="#phone"
-              aria-expanded="false" aria-controls="phone" aria-label="phone">
-              <i class="fa-solid fa-phone"></i>
-            </button>
-            <a class="contact-us-collapse collapse collapse-horizontal" id="phone">
-              <span class="text-light font-style-italic"> +84.838.674.298 </span>
-            </a>
-          </li>
-
-        </ul>
-
-      </form>
-
-    </nav>
-  </header>
-
   <!--home-->
-  <header class="home" id="home">
-    <div class="home-container container-fluid">
+  <header class="home container-fluid" id="home">
 
-      <!--navbar-->
-      <nav class="home-navbar navbar navbar-expand-lg" data-css="home">
+    <!--navbar-->
+    <nav class="home-navbar navbar navbar-expand-sm d-flex" data-css="home">
 
-        <!--brand-->
-        <div class="home-navbar-brand navbar-brand d-flex">
-          <div class="brand-img">
-            <img src="./assets/images/logo/logo.png" class="home-navbar-brand-logo img-fluid" alt="VIET SIAM TRAVEL">
-          </div>
-          <div class="home-navbar-brand-name">
-            <h3 class="title text-uppercase" id="brand">
-              viet siam travel
-            </h3>
-          </div>
-        </div>
+      <!--brand-->
+      <div class="home-navbar-brand navbar-brand d-flex">
 
-        <!--button-collapse-->
-        <button class="home-navbar-toggler navbar-toggler fa-solid fa-caret-down" type="button" role="button"
-          data-bs-toggle="collapse" data-bs-target="#mainHeader" aria-controls="mainHeader" aria-expanded="false"
-          aria-label="Toggle navigation">
-        </button>
+        <!--logo-->
+        <img class="home-navbar-brand-logo" src="./assets/images/logo/logo.png" alt="viet siam travel">
 
-        <!--item-collapse-->
-        <div class="home-navbar-collapse navbar-collapse collapse" id="mainHeader">
-          <ul class="home-navbar-nav navbar-nav m-auto">
+        <!--name-->
+        <span class="home-navbar-brand-name text-uppercase"> viet siam travel </span>
 
-            <!--item-home-->
-            <li class="home-nav-item nav-item active">
-              <a class="text-uppercase" href="#home">
-                home
-              </a>
-            </li>
+      </div>
 
-            <!--item-destination-->
-            <li class="home-nav-item nav-item" id="dropdownDestination">
-              <a class="text-uppercase" href="#destination">
-                destination
-              </a>
-            </li>
+      <!--button-collapse-->
+      <button class="home-navbar-toggler navbar-toggler fa-solid fa-caret-down" type="button" role="button"
+        data-bs-toggle="collapse" data-bs-target="#mainHeader" aria-controls="mainHeader" aria-expanded="false"
+        aria-label="Toggle navigation">
+      </button>
 
-            <!--item-tour-->
-            <li class="home-nav-item nav-item">
-              <a class="text-uppercase" href="#tourPackage">
-                tour
-              </a>
-            </li>
+      <!--collapse-->
+      <div class="home-navbar-collapse navbar-collapse collapse" id="mainHeader">
 
-            <!--item-hotel-->
-            <li class="home-nav-item nav-item">
-              <a class="text-uppercase" href="#hotel">
-                hotel
-              </a>
-            </li>
+        <!--navbar-nav-->
+        <ul class="home-navbar-nav navbar-nav m-auto d-flex">
 
-            <!--item-about-->
-            <li class="home-nav-item nav-item">
-              <a class="text-uppercase" href="#about">
-                about
-              </a>
-            </li>
+          <!--item-->
+          <li class="home-nav-item nav-item active">
+            <a class="text-uppercase" href="#home">
+              home
+            </a>
+          </li>
 
-          </ul>
-          
+          <!--item-->
+          <li class="home-nav-item nav-item" id="dropdownDestination">
+            <a class="text-uppercase" href="#destination">
+              destination
+            </a>
+          </li>
+
+          <!--item-->
+          <li class="home-nav-item nav-item">
+            <a class="text-uppercase" href="#tour">
+              tour
+            </a>
+          </li>
+
+          <!--item-->
+          <li class="home-nav-item nav-item">
+            <a class="text-uppercase" href="#hotel">
+              hotel
+            </a>
+          </li>
+
+          <!--item-->
+          <li class="home-nav-item nav-item">
+            <a class="text-uppercase" href="#about">
+              about
+            </a>
+          </li>
+
           <!--button-booking-->
           <button class="home-btn btn btn-info btn-fill-right" type="submit">
             <span class="text-light text-uppercase"> booking </span>
           </button>
 
-        </div>
+        </ul>
 
-      </nav>
+      </div>
 
-    </div>
+    </nav>
+
   </header>
 
   <!--banner-->
-  <section class="banner" id="banner">
-    <div class="banner-container container-fluid">
+  <section class="banner container-fluid" id="banner">
 
-      <!--swiper-->
-      <div class="banner-swiper swiper" id="swiperBanner">
-        <div class="banner-swiper-wrapper swiper-wrapper">
+    <!--grid-->
+    <div class="row">
 
-          <!--slide-1-->
-          <div class="swiper-slide">
-            <div class="banner-card card text-bg-dark">
-              <div class="banner-card-img card-img banner-bg-1"></div>
-              <div class="banner-card-img-overlay card-img-overlay"></div>
+      <!--content-->
+      <div class="col-sm-4">
+
+        <!--banner-overlay-->
+        <div class="banner-overlay d-flex banner-overlay-index-2">
+
+          <!--banner-content-->
+          <div class="banner-content">
+
+            <div class="banner-content-group">
+
+              <!--swiper-navigation-->
+              <div class="banner-swiper-navigation swiper-button-next"></div>
+              <div class="banner-swiper-navigation swiper-button-prev"></div>
+
+              <!--title-->
+              <h1 class="subtitle text-light text-capitalize">
+                welcome to
+              </h1>
+              <h1 class="title text-uppercase border-bottom text-light">
+                viet siam travel
+              </h1>
+
+              <!--content-->
+              <p class="font-style-italic">
+
+              </p>
+
             </div>
-          </div>
 
-          <!--slide-2-->
-          <div class="swiper-slide">
-            <div class="banner-card card text-bg-dark">
-              <div class="banner-card-img card-img banner-bg-2"></div>
-              <div class="banner-card-img-overlay card-img-overlay"></div>
-            </div>
-          </div>
-
-          <!--slide-3-->
-          <div class="swiper-slide">
-            <div class="banner-card card text-bg-dark">
-              <div class="banner-card-img card-img banner-bg-3"></div>
-              <div class="banner-card-img-overlay card-img-overlay"></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!--banner-overlay-->
-      <div class="banner-overlay banner-overlay-index-1"></div>
-
-      <!--banner-overlay-->
-      <div class="banner-overlay d-flex banner-overlay-index-2">
-
-        <!--banner-content-->
-        <div class="banner-content">
-
-          <div class="banner-content-group">
-
-            <!--swiper-navigation-->
-            <div class="banner-swiper-navigation swiper-button-next"></div>
-            <div class="banner-swiper-navigation swiper-button-prev"></div>
-
-            <!--title-->
-            <h1 class="subtitle text-light text-capitalize">
-              welcome to
-            </h1>
-            <h1 class="title text-uppercase border-bottom text-light">
-              viet siam travel
-            </h1>
-
-            <!--content-->
-            <p class="font-style-italic"></p>
+            <!--banner-btn-->
+            <button class="banner-btn btn btn-info btn-fill-right text-light " type="submit">
+              <span class="text-uppercase"> booking </span>
+              <i class="fa-solid fa-plane"></i>
+            </button>
 
           </div>
-
-          <!--banner-btn-->
-          <button class="banner-btn btn btn-info btn-fill-right text-light " type="submit">
-            <span class="text-uppercase"> booking </span>
-            <i class="fa-solid fa-plane"></i>
-          </button>
 
         </div>
 
       </div>
 
-      <!--why-us-->
-      <div class="why-us" id="whyUs">
+      <!--img-->
+      <div class="col-sm-8">
 
-        <div class="why-us-card-group card-group parallax parallax-4">
+        <!--swiper-->
+        <div class="banner-swiper swiper" id="banner-swiper">
+          <div class="banner-swiper-wrapper swiper-wrapper">
 
-          <!--content-1-->
-          <div class="why-us-card why-us-card-bg-1 card">
-            <div class="why-us-card-body card-body text-center">
-
-              <i class="fa-solid fa-umbrella-beach text-color-10 font-size-32px"></i>
-              <h3 class="title text-color-5">
-                Professional
-              </h3>
-
-              <p class="font-style-italic text-color-7">
-                Viet Siam Travel affirms that we are an experienced and senior travel operator.
-              </p>
-
+            <!--slide-1-->
+            <div class="swiper-slide">
+              <div class="banner-card card text-bg-dark">
+                <div class="banner-card-img card-img banner-bg-1"></div>
+                <div class="banner-card-img-overlay card-img-overlay"></div>
+              </div>
             </div>
-          </div>
 
-          <!--content-2-->
-          <div class="why-us-card why-us-card-bg-2 card">
-            <div class="why-us-card-body card-body text-center">
-
-              <i class="fa-solid fa-martini-glass-citrus text-color-8 font-size-32px"></i>
-
-              <h3 class="title text-color-5">
-                Luxury & Relax
-              </h3>
-
-              <p class="font-style-italic text-color-7">
-                Proud to accommodate the best service, the most luxurious venue, from the highest point of the hotel.
-              </p>
-
+            <!--slide-2-->
+            <div class="swiper-slide">
+              <div class="banner-card card text-bg-dark">
+                <div class="banner-card-img card-img banner-bg-2"></div>
+                <div class="banner-card-img-overlay card-img-overlay"></div>
+              </div>
             </div>
-          </div>
 
-          <!--content-3-->
-          <div class="why-us-card why-us-card-bg-3 card">
-            <div class="why-us-card-body card-body text-center">
-
-              <i class="fa-solid fa-hand-holding-heart text-danger font-size-32px"></i>
-
-              <h3 class="title text-color-5">
-                Save Valuable Time
-              </h3>
-
-              <p class="font-style-italic text-color-7">
-                It is our absolute pleasure to show you everything we love about our region.
-              </p>
-
+            <!--slide-3-->
+            <div class="swiper-slide">
+              <div class="banner-card card text-bg-dark">
+                <div class="banner-card-img card-img banner-bg-3"></div>
+                <div class="banner-card-img-overlay card-img-overlay"></div>
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
 
       </div>
 
     </div>
+
+  </section>
+
+  <!--why-us-->
+  <section class="why-us" id="whyUs">
+
+    <div class="why-us-card-group card-group">
+
+      <!--content-1-->
+      <div class="why-us-card card parallax parallax-4">
+        <div class="why-us-card-body why-us-card-body-bg-1 card-body text-center">
+
+          <i class="fa-solid fa-umbrella-beach text-color-9 font-size-32"></i>
+          <h3 class="title text-color-6 text-capitalize">
+            Professional
+          </h3>
+
+          <p class="font-style-italic text-color-5">
+            Viet Siam Travel affirms that we are an experienced and senior travel operator.
+          </p>
+
+        </div>
+      </div>
+
+      <!--content-2-->
+      <div class="why-us-card card parallax parallax-4">
+        <div class="why-us-card-body why-us-card-body-bg-2 card-body text-center">
+
+          <i class="fa-solid fa-martini-glass-citrus text-color-8 font-size-32"></i>
+
+          <h3 class="title text-color-7 text-capitalize">
+            Luxury & Relax
+          </h3>
+
+          <p class="font-style-italic text-color-5">
+            Proud to accommodate the best service, the most luxurious venue, from the highest point of the hotel.
+          </p>
+
+        </div>
+      </div>
+
+      <!--content-3-->
+      <div class="why-us-card card parallax parallax-4">
+        <div class="why-us-card-body why-us-card-body-bg-3 card-body text-center">
+
+          <i class="fa-solid fa-camera text-color-7 font-size-32"></i>
+
+          <h3 class="title text-color-8 text-capitalize">
+            Save Valuable Time
+          </h3>
+
+          <p class="font-style-italic text-color-5">
+            It is our absolute pleasure to show you everything we love about our region.
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
   </section>
 
   <!--highlight-->
-  <section class="highlight section" id="highlightTour">
+  <section class="highlight section" id="highlight">
 
     <!--title-->
     <div class="container-fluid">
       <div class="section-title-group d-flex">
 
-        <h1 class="section-title title text-uppercase text-light">
+        <h1 class="section-title title text-uppercase text-color-9">
           <span class="section-title-bg bg-index-1">
             highlight
           </span>
           overview
         </h1>
 
-        <h2 class="subtitle text-color-1">
+        <h1 class="subtitle text-color-1">
           Discovering unlimited new worlds and vibrant cultures!
-        </h2>
-        
+        </h1>
+
       </div>
+    </div>
+
     </div>
 
     <div class="highlight-container container-fluid d-flex">
 
       <!--highlight-video-->
-      <div class="highlight-video d-flex" id="videoHighlight">
+      <div class="highlight-video d-flex" id="highlight-video">
         <div class="highlight-video-container">
 
           <!--swiper-->
-          <div class="highlight-video-swiper swiper" id="swiperVideoHighlight">
+          <div class="highlight-video-swiper swiper" id="highlight-video-swiper">
+
+            <!--slide-->
             <div class="highlight-video-swiper-wrapper swiper-wrapper">
-  
+
               <!--slide-1-->
               <div class="swiper-slide">
                 <div class="highlight-card card">
                   <div class="card-video">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/n1I0_l_Tu-U" title="viet Siam Travel"
-                      frameborder="0" aspect-ratio="16:9"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen></iframe>
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/n1I0_l_Tu-U"
+                      title="viet Siam Travel" frameborder="0" aspect-ratio="16:9" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
-  
+
               <!--slide-2-->
               <div class="swiper-slide">
                 <div class="highlight-card card">
                   <div class="card-video">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/cii2FcMUshU" title="viet Siam Travel"
-                      frameborder="0" aspect-ratio="16:9"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen></iframe>
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/cii2FcMUshU"
+                      title="viet Siam Travel" frameborder="0" aspect-ratio="16:9" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
-  
+
               <!--slide-3-->
               <div class="swiper-slide">
                 <div class="highlight-card card">
                   <div class="card-video">
                     <iframe class="youtube-video" src="https://youtube.com/embed/OCQ51RkZ8Hs" title="viet Siam Travel"
-                      frameborder="0" aspect-ratio="16:9"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen></iframe>
+                      frameborder="0" aspect-ratio="16:9" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
-  
+
             </div>
-  
+
             <!--control-->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="highlight-video-swiper-pagination swiper-pagination"></div>
-  
+
           </div>
 
         </div>
       </div>
 
       <!--highlight-news-->
-      <div class="highlight-news" id="newsHighlight">
+      <div class="highlight-news" id="highlight-news">
         <div class="highlight-news-container">
 
           <!--swiper-->
-          <div class="swiper" id="swiperNewsHighlight">
+          <div class="swiper" id="highlight-news-swiper">
             <div class="swiper-wrapper">
-  
+
               <!--slide-1-->
               <div class="swiper-slide">
-  
+
                 <div class="highlight-card card d-flex card-top">
                   <div class="col-sm-4">
                     <div class="highlight-card-img card-img">
@@ -415,7 +370,7 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="highlight-card card d-flex card-center">
                   <div class="col-sm-4">
                     <div class="highlight-card-img card-img">
@@ -434,7 +389,7 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="highlight-card card d-flex card-bottom">
                   <div class="col-sm-4">
                     <div class="highlight-card-img card-img">
@@ -454,10 +409,10 @@
                   </div>
                 </div>
               </div>
-  
+
               <!--slide-2-->
               <div class="swiper-slide">
-  
+
                 <div class="highlight-card card d-flex card-top">
                   <div class="col-sm-4">
                     <div class="highlight-card-img card-img">
@@ -476,7 +431,7 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="highlight-card card d-flex card-center">
                   <div class="col-sm-4">
                     <div class="highlight-card-img card-img">
@@ -495,7 +450,7 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="highlight-card card d-flex card-bottom">
                   <div class="col-sm-4">
                     <div class="highlight-card-img card-img">
@@ -515,13 +470,13 @@
                   </div>
                 </div>
               </div>
-  
+
             </div>
-  
+
             <!--control-->
             <div class="highlight-news-swiper-pagination swiper-pagination fraction"></div>
             <div class="swiper-scrollbar"></div>
-  
+
           </div>
 
         </div>
@@ -535,17 +490,17 @@
 
     <!--title-->
     <div class="container-fluid">
-      <div class="d-flex section-title-group">
+      <div class="section-title-group d-flex">
 
         <h1 class="section-title title text-uppercase text-color-9">
-          <span class="section-title-bg">
-            Explore
+          <span class="section-title-bg bg-index-1">
+            explore
           </span>
-          Top Destinations
+          top destination
         </h1>
 
-        <h2 class="subtitle text-color-2">
-          Explore your life, travel where you want!
+        <h2 class="subtitle text-color-1">
+          Explore your life, travel where your want!
         </h2>
 
       </div>
@@ -553,7 +508,7 @@
 
     <!--destination-->
     <div class="destination-container container-fluid">
-      <div class="destination-swiper swiper" id="swiperDestination">
+      <div class="destination-swiper swiper" id="destination-swiper">
         <div class="swiper-wrapper"></div>
 
         <!--control-->
@@ -566,8 +521,9 @@
 
   </section>
 
-  <!--tourPackage-->
-  <section class="section" id="tourPackage">
+  <!--tour-->
+  <section class="section" id="tour">
+
     <!--title-->
     <div class="container-fluid">
       <div class="d-flex section-title-group">
@@ -582,11 +538,11 @@
         </h2>
       </div>
     </div>
-    <!--title.end-->
-    <!--tourPackage-->
-    <div class="container-fluid" type="tourPackage">
+
+    <!--tour-->
+    <div class="container-fluid">
       <!--swiper-->
-      <div class="swiper" id="swiperTourPackage">
+      <div class="swiper" id="tour-swiper">
         <!--slide-->
         <div class="swiper-wrapper"></div>
         <!--slide.end-->
@@ -598,11 +554,12 @@
       </div>
       <!--swiper.end-->
     </div>
-    <!--tourPackage.end-->
+    <!--tour.end-->
   </section>
 
   <!--hotel-->
   <section class="section" id="hotel">
+
     <div class="container-fluid">
       <!--title-->
       <div class="d-flex section-title-group">
@@ -616,10 +573,10 @@
           Immersive in the fresh nature, participate in entertainment activities, relax.
         </h2>
       </div>
-      <!--title.end-->
     </div>
+
     <!--hotel-->
-    <div class="container-fluid" type="hotel">
+    <div class="container-fluid">
       <!--card-group-->
       <div class="card-group">
         <!--card-left-->
@@ -641,7 +598,7 @@
               <a href="" class="text-capitalize">read more</a>
             </div>
           </div>
-          <!--card-top.end-->
+
           <!--card-bottom-->
           <div class="card" type="img-top">
             <div class="card-img">
@@ -659,9 +616,9 @@
               <a href="" class="text-capitalize">read more</a>
             </div>
           </div>
-          <!--card-bottom.end-->
+
         </div>
-        <!--card-left.end-->
+
         <!--card-center-->
         <div class="col">
           <!--card-top-->
@@ -683,7 +640,7 @@
               <a href="" class="text-capitalize">read more</a>
             </div>
           </div>
-          <!--card-top.end-->
+
           <!--card-bottom-->
           <div class="card" type="img-top">
             <div class="card-img">
@@ -701,9 +658,9 @@
               <a href="" class="text-capitalize">read more</a>
             </div>
           </div>
-          <!--card-bottom.end-->
+
         </div>
-        <!--card-center.end-->
+
         <!--card-right-->
         <div class="card" type="img-center">
           <div class="card-img" type="aspect-ratio = 3:4">
@@ -722,11 +679,11 @@
             <a href="" class="text-capitalize">read more</a>
           </div>
         </div>
-        <!--card-center.end-->
+
       </div>
-      <!--card-group.end-->
+
     </div>
-    <!--hotel.end-->
+
   </section>
 
   <!--newsLetter-->
@@ -745,12 +702,12 @@
         </h2>
       </div>
     </div>
-    <!--title.end-->
+
     <!--newsLetter-->
     <div class="parallax" type="parallax-2">
-      <!--content-group-->
       <div class="container-fluid" type="newsLetter">
         <div class="card-group">
+
           <!--card-->
           <div class="card">
             <div class="card-body">
@@ -776,7 +733,7 @@
               </div>
             </div>
           </div>
-          <!--card-end-->
+
           <!--input-->
           <div class="card">
             <div class="input-group">
@@ -794,20 +751,20 @@
               </button>
             </div>
           </div>
-          <!--input.end-->
+
         </div>
       </div>
-      <!--content-group.end-->
+
     </div>
     </div>
-    <!--newsLetter.end-->
+
   </section>
 
   <!--footer-->
   <footer class="footer" id="footer">
-    <!--footer-->
     <div class="container-fluid" type="footer">
       <div class="d-flex" type="footer">
+
         <!--logo-->
         <div class="logo">
           <div class="d-flex" type="logo">
@@ -819,7 +776,7 @@
             </span>
           </div>
         </div>
-        <!--logo.end-->
+
         <!--contact-->
         <div class="contact-us text-light">
           <div class="d-flex" type="contact-us">
@@ -836,7 +793,7 @@
             </div>
           </div>
         </div>
-        <!--contact.end-->
+
         <!--payment-->
         <div class="payment text-light">
           <div class="d-flex" type="payment">
@@ -851,15 +808,13 @@
             </div>
           </div>
         </div>
+
       </div>
-      <!--payment.end-->
     </div>
-    </div>
-    <!--footer.end-->
   </footer>
 
   <!--backToTop-->
-  <a href="#banner" class="btn" id="backTop" aria-label="to top page">
+  <a href="#banner" class="btn" id="back-to-top" aria-label="to top page">
     <i class="fa-solid fa-chevron-up"></i>
   </a>
 
@@ -870,36 +825,37 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!--JQuery.end-->
+
   <!--Popper @2.11.6 cdnjs-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"
     integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!--Popper.end-->
+
   <!--Bootstrap @5.2.3 cdnjs-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
     integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!--Bootstrap.end-->
+
   <!--Bootstrap Datepicker plugin @-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
     integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!--Datepicker.end-->
+
   <!--Swiper @9.0.5 cdnjs-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.min.js"
     integrity="sha512-cEcJcdNCHLm3YSMAwsI/NeHFqfgNQvO0C27zkPuYZbYjhKlS9+kqO5hZ9YltQ4GaTDpePDQ2SrEk8gHUVaqxig=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
-  <!--Swiper.end-->
+
   <!--Custom js @1.0.0 assets-->
-  <script src="./assets/.js/scripts.js"></script>
-  <script src="./assets/.js/tourPackage.js"></script>
+  <script src="./assets/.js/script.js"></script>
+  <script src="./assets/.js/tour.js"></script>
   <script src="./assets/.js/destination.js"></script>
-  <script src="./assets/.js/languageSelect.js"></script>
+  <script src="./assets/.js/lang.js"></script>
+
   <script>
-    /** swiperBanner */
-    var swiperBanner = new Swiper("#swiperBanner", {
+    /** banner-swiper */
+    var banner = new Swiper("#banner-swiper", {
       slidesPerView: 1,
       centeredSlides: true,
       speed: 800,
@@ -914,8 +870,8 @@
       },
     });
 
-    /** swiperDestination */
-    var swiperDestination = new Swiper("#swiperDestination", {
+    /** destination-swiper */
+    var destination = new Swiper("#destination-swiper", {
       breakpoints: {
         360: {
           slidesPerView: 1,
@@ -942,8 +898,8 @@
       },
     });
 
-    /** swiperVideoHighlight */
-    var swiperVideoHighlight = new Swiper("#swiperVideoHighlight", {
+    /** highlight-video-swiper */
+    var video = new Swiper("#highlight-video-swiper", {
       slidesPerView: 1,
       centeredSlides: true,
       spaceBetween: 16,
@@ -958,8 +914,8 @@
       },
     });
 
-    /** swiperNewsHighlight */
-    var swiperNewsHighlight = new Swiper("#swiperNewsHighlight", {
+    /** highlight-news-swiper */
+    var news = new Swiper("#highlight-news-swiper", {
       slidesPerView: 1,
       spaceBetween: 0,
       pagination: {
@@ -972,8 +928,8 @@
       },
     });
 
-    /** swiperTourPackage */
-    var swiperNewsHighlight = new Swiper("#swiperTourPackage", {
+    /** tour-swiper */
+    var tour = new Swiper("#tour-swiper", {
       breakpoints: {
         280: {
           slidesPerView: 1,

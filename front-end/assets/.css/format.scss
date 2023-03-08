@@ -94,12 +94,43 @@ html {
   }
 
   &.home {
-    &-navbar-brand {
+    &-navbar {
       display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
       align-items: center;
-      justify-content: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+
+      @media screen and (min-width: 576px) {
+        justify-content: flex-start;
+      }
+
+      @media screen and (max-width: 575px) {
+        justify-content: center;
+      }
+
+      &-brand {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width: 576px) {
+          flex-direction: row;
+        }
+
+        @media screen and (max-width: 575px) {
+          flex-direction: column;
+        }
+      }
     }
   }
 
@@ -281,7 +312,7 @@ li {
       z-index: -1;
       font-weight: 900;
     }
-    
+
     &-bg {
       top: 0;
       opacity: .25;

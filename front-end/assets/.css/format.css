@@ -71,12 +71,45 @@ html {
 .d-flex.contact-us-nav-link, .d-flex.language-select-nav-link {
   flex-wrap: nowrap;
 }
+.d-flex.home-navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+@media screen and (min-width: 576px) {
+  .d-flex.home-navbar {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 575px) {
+  .d-flex.home-navbar {
+    justify-content: center;
+  }
+}
 .d-flex.home-navbar-brand {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+}
+.d-flex.home-navbar-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 576px) {
+  .d-flex.home-navbar-nav {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 575px) {
+  .d-flex.home-navbar-nav {
+    flex-direction: column;
+  }
 }
 .d-flex.banner-content {
   display: flex;
